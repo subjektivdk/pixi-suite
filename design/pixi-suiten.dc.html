@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/industry-2f952de8-d4c0-4a73-8ed6-4b814f08a2ad/styles.css">
+<script src="_ds/industry-2f952de8-d4c0-4a73-8ed6-4b814f08a2ad/_ds_bundle.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap">
+<template id="__bundler_thumbnail"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#000055"></rect><rect x="30" y="34" width="40" height="32" fill="#000000"></rect><rect x="38" y="44" width="8" height="10" fill="#00FFFF"></rect><rect x="54" y="44" width="8" height="10" fill="#00FFFF"></rect></svg></template>
+<style>
+:root{--seed:#7aa2f7;--pseed:#55AAFF;--tbg:#1a1b26;--tfg:#c0caf5;--tmuted:#565f89;--mono:"JetBrains Mono",ui-monospace,monospace}
+body{margin:0;background:var(--color-bg)}
+a{color:var(--color-accent-700)}a:hover{color:var(--color-accent-800)}
+</style>
+</helmet>
+
+<section data-screen-label="00 Retning" style="width:2560px;padding:96px 80px 0;display:flex;flex-direction:column;gap:48px">
+  <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:48px;align-items:end">
+    <div style="grid-column:span 2">
+      <h6 class="text-muted" style="margin:0 0 12px">pixi-suiten · designretning v1 · 11. oktober 2026</h6>
+      <h1 style="font-size:96px;margin:0;line-height:0.95">pixi-suiten</h1>
+    </div>
+    <p style="grid-column:span 2;font-size:20px;line-height:1.5;margin:0;max-width:820px;text-wrap:pretty">Rolig, teknisk og personlig. pixi er den eneste figur. Alt andet er hårstreger, tal og én sætning om, hvordan det går. Hver skærm svarer på ét spørgsmål: virker det?</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px">
+    <div class="card blueprint" style="padding:28px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="card-kicker" style="color:var(--color-accent-700)">01 · Figur</div><div class="card-title" style="font-size:24px">Én pixi, én fast palet</div><p class="card-body" style="font-size:15px">pixi er din tegning, reduceret til ti Pebble-farver, og skifter aldrig farve med temaet. Kun øjne, mund og bryst ændrer sig mellem tilstande.</p></div>
+    <div class="card blueprint" style="padding:28px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="card-kicker" style="color:var(--color-accent-700)">02 · Tema</div><div class="card-title" style="font-size:24px">Temaet styrer resten</div><p class="card-body" style="font-size:15px">Omarchy-temaets accent bliver Material You-seed på telefonen, accent i terminalen og nærmeste af 64 farver på uret. Prøv temaerne under Tweaks.</p></div>
+    <div class="card blueprint" style="padding:28px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="card-kicker" style="color:var(--color-accent-700)">03 · Mørk først</div><div class="card-title" style="font-size:24px">Mørk som standard, lys som spejling</div><p class="card-body" style="font-size:15px">Samme struktur i begge tilstande. Uret er undtagelsen: hvid baggrund, fordi skærmen er reflekterende og læses bedst i lys.</p></div>
+    <div class="card blueprint" style="padding:28px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="card-kicker" style="color:var(--color-accent-700)">04 · Skrift</div><div class="card-title" style="font-size:24px">Tal står altid i mono</div><p class="card-body" style="font-size:15px">JetBrains Mono til tider, antal og hele terminalen. Barlow og Barlow Condensed til tekst på telefonen. »07:41« ser ens ud overalt.</p></div>
+    <div class="card blueprint" style="padding:28px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="card-kicker" style="color:var(--color-accent-700)">05 · Form</div><div class="card-title" style="font-size:24px">Hårstreger i stedet for kort</div><p class="card-body" style="font-size:15px">Lister med tynde linjer og meget luft. Primærknappen er det eneste fyldte element. Firkantede hjørner, 4 dp i Material 3.</p></div>
+    <div class="card blueprint" style="padding:28px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><div class="card-kicker" style="color:var(--color-accent-700)">06 · Tone</div><div class="card-title" style="font-size:24px">Kort, sagligt, uden skyld</div><p class="card-body" style="font-size:15px">Sig hvad der skete, og hvad du kan gøre. Ingen udråbstegn, ingen streaks, ingen ros. Manglende data er en tilstand, ikke en fejl hos dig.</p></div>
+  </div>
+</section>
+
+<section data-screen-label="01 Overblik" style="width:2560px;padding:120px 80px 0;display:flex;flex-direction:column;gap:32px">
+  <div><h6 class="text-muted" style="margin:0 0 8px">01</h6><h2 style="font-size:48px;margin:0">Overblik: fire dele, ét sprog</h2></div>
+  <div style="display:grid;grid-template-columns:200px repeat(4,minmax(0,1fr));border-top:1px solid var(--color-divider)">
+    <div></div>
+    <div style="padding:16px 24px;font-family:var(--font-heading);font-weight:600;font-size:22px">Telefon · pixi-sync</div>
+    <div style="padding:16px 24px;font-family:var(--font-heading);font-weight:600;font-size:22px">Ur · pixi-sense</div>
+    <div style="padding:16px 24px;font-family:var(--font-heading);font-weight:600;font-size:22px">Terminal · pixi-hub</div>
+    <div style="padding:16px 24px;font-family:var(--font-heading);font-weight:600;font-size:22px">Note · Obsidian</div>
+
+    <div style="padding:24px 0;border-top:1px solid var(--color-divider)"><h6 class="text-muted" style="margin:0">pixi</h6></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider)"><div style="height:200px;background:#1d1f20;display:grid;place-items:center"><img src="{{ px.glad }}" style="width:153px;height:138px;image-rendering:pixelated"></div></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider)"><div style="height:200px;background:#FFFFFF;border:1px solid var(--color-divider);display:grid;place-items:center"><img src="{{ pw.glad }}" style="width:153px;height:138px;image-rendering:pixelated"></div></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider)"><div style="height:200px;background:var(--tbg);display:grid;place-items:center">{{ termGlad }}</div></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider)"><div style="height:200px;background:var(--tbg);display:grid;place-items:center"><img src="{{ px.glad }}" style="width:102px;height:92px;image-rendering:pixelated"></div></div>
+
+    <div style="padding:24px 0;border-top:1px solid var(--color-divider)"><h6 class="text-muted" style="margin:0">Status</h6></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);font-size:17px">Sidst synkroniseret <span style="font-family:var(--mono)">07:41</span></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);font-family:var(--font-heading);font-size:20px">● synk <span>07:41</span></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);font-family:var(--mono);font-size:15px">sync 07:41 · kø 0</div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);font-family:var(--mono);font-size:15px">&gt; [!info] Alt virker<br>&gt; Sidst synkroniseret 07:41</div>
+
+    <div style="padding:24px 0;border-top:1px solid var(--color-divider)"><h6 class="text-muted" style="margin:0">Accent</h6></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);display:flex;gap:14px;align-items:center"><div style="width:40px;height:40px;background:var(--seed)"></div><span>Material You-seed fra uni-theme</span></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);display:flex;gap:14px;align-items:center"><div style="width:40px;height:40px;background:var(--pseed)"></div><span>Nærmeste af 64 · <span style="font-family:var(--mono)">{{ pebbleHex }}</span></span></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);display:flex;gap:14px;align-items:center"><div style="width:40px;height:40px;background:var(--seed)"></div><span>Omarchy-accent · {{ themeName }}</span></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);display:flex;gap:14px;align-items:center"><div style="width:40px;height:40px;background:var(--seed)"></div><span>Obsidian-accent (samme tema)</span></div>
+
+    <div style="padding:24px 0;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)"><h6 class="text-muted" style="margin:0">Skrift</h6></div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">Barlow + JetBrains Mono til tal</div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">Pebble-systemskrift (Gothic/LECO), vist her med Barlow Condensed</div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">JetBrains Mono (temaets terminalskrift)</div>
+    <div style="padding:24px;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)">Vaultens skrift, mono i kodeblokke og tabeller</div>
+  </div>
+</section>
+
+<section data-screen-label="02 Designsystem" style="width:2560px;padding:120px 80px 0;display:flex;flex-direction:column;gap:32px">
+  <div><h6 class="text-muted" style="margin:0 0 8px">02</h6><h2 style="font-size:48px;margin:0">Designsystem</h2></div>
+  <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:48px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <h3 style="margin:0">Farver</h3>
+      <div>
+        <h6 class="text-muted">pixi-palet (fast, fra din tegning, alle 10 er Pebble-farver)</h6>
+        <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px">
+          <sc-for list="{{ palette }}" as="c" hint-placeholder-count="8">
+            <div style="display:flex;flex-direction:column;gap:6px"><div style="height:48px;border:1px solid var(--color-divider);background:{{ c.hex }}"></div><div style="font-size:13px">{{ c.name }}</div><div style="font-family:var(--mono);font-size:11px;color:var(--color-neutral-700)">{{ c.hex }}</div></div>
+          </sc-for>
+        </div>
+      </div>
+      <div>
+        <h6 class="text-muted">Mørk (standard)</h6>
+        <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border:1px solid var(--color-divider)">
+          <div style="height:72px;background:#1d1f20;color:#f5f5f8;padding:8px;font-size:11px">Grund</div>
+          <div style="height:72px;background:#2b2b2d;color:#f5f5f8;padding:8px;font-size:11px">Flade</div>
+          <div style="height:72px;background:#f5f5f8;color:#1d1f20;padding:8px;font-size:11px">Tekst</div>
+          <div style="height:72px;background:#98989b;color:#1d1f20;padding:8px;font-size:11px">Dæmpet</div>
+          <div style="height:72px;background:var(--seed);color:#1d1f20;padding:8px;font-size:11px">Accent</div>
+        </div>
+      </div>
+      <div>
+        <h6 class="text-muted">Lys</h6>
+        <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;border:1px solid var(--color-divider)">
+          <div style="height:72px;background:#f2f2f3;color:#1d1f20;padding:8px;font-size:11px">Grund</div>
+          <div style="height:72px;background:#e9e9ea;color:#1d1f20;padding:8px;font-size:11px">Flade</div>
+          <div style="height:72px;background:#1d1f20;color:#f5f5f8;padding:8px;font-size:11px">Tekst</div>
+          <div style="height:72px;background:#5d5d60;color:#f5f5f8;padding:8px;font-size:11px">Dæmpet</div>
+          <div style="height:72px;background:color-mix(in oklch, var(--seed), black 30%);color:#f5f5f8;padding:8px;font-size:11px">Accent</div>
+        </div>
+      </div>
+      <div>
+        <h6 class="text-muted">Accent fra temaet: {{ themeName }}</h6>
+        <div style="display:grid;grid-template-columns:repeat(9,minmax(0,1fr));border:1px solid var(--color-divider)">
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), white 85%)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), white 65%)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), white 45%)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), white 22%)"></div>
+          <div style="height:40px;background:var(--seed)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), black 20%)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), black 40%)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), black 60%)"></div>
+          <div style="height:40px;background:color-mix(in oklch, var(--seed), black 78%)"></div>
+        </div>
+        <p style="font-size:14px;margin:14px 0 0;text-wrap:pretty">Omarchy-tema → uni-theme → telefonen sætter accenten som Material You-seed; pixi-sync bruger dynamisk farve og følger med. Uret får accenten afrundet til nærmeste kanalværdi (00/55/AA/FF). Der er ingen rød eller grøn: status vises med pixi og tekst.</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <h3 style="margin:0">Typografi</h3>
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <div><div style="font-family:var(--font-heading);font-weight:600;font-size:40px;line-height:1">Alt virker.</div><div style="font-size:12px;color:var(--color-neutral-700);margin-top:6px">Barlow Condensed 600 · 32–40 sp · status</div></div>
+        <div><div style="font-family:var(--font-heading);font-weight:600;font-size:22px">Serveren svarer ikke</div><div style="font-size:12px;color:var(--color-neutral-700);margin-top:6px">Barlow Condensed 600 · 22 sp · titler</div></div>
+        <div><div style="font-size:16px;max-width:340px">Data gemmes på telefonen og sendes, når forbindelsen er tilbage.</div><div style="font-size:12px;color:var(--color-neutral-700);margin-top:6px">Barlow 400 · 16 sp · brødtekst</div></div>
+        <div><div style="font-family:var(--mono);font-size:16px">07:41 · 214 poster · 58 bpm</div><div style="font-size:12px;color:var(--color-neutral-700);margin-top:6px">JetBrains Mono 400 · 14–16 sp · alle tal, og hele TUI'en</div></div>
+      </div>
+      <p style="font-size:14px;margin:0;text-wrap:pretty">Én skrift til både Android og terminal er JetBrains Mono. Den bærer tal og data alle steder. Barlow står for den løbende tekst på telefonen, så skærmene ikke ligner en logfil.</p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <h3 style="margin:0">Afstand og berøring</h3>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <sc-for list="{{ spacing }}" as="s" hint-placeholder-count="6">
+          <div style="display:grid;grid-template-columns:56px 1fr;align-items:center;gap:12px"><span style="font-family:var(--mono);font-size:13px">{{ s.label }}</span><div style="height:12px;background:var(--color-accent-300);width:{{ s.w }}"></div></div>
+        </sc-for>
+      </div>
+      <div style="display:flex;flex-direction:column;border-top:1px solid var(--color-divider)">
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--color-divider)"><span>Mindste berøringsflade</span><span style="font-family:var(--mono)">48 dp</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--color-divider)"><span>Primærknap</span><span style="font-family:var(--mono)">56 dp, fuld bredde</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--color-divider)"><span>Skærmmargin</span><span style="font-family:var(--mono)">20 dp</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--color-divider)"><span>M3-form</span><span style="font-family:var(--mono)">extra small, 4 dp</span></div>
+        <div style="display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--color-divider)"><span>pixi-skalering</span><span style="font-family:var(--mono)">kun hele tal: 1×, 2×, 3×</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:28px">
+      <h3 style="margin:0">Ikoner og tone</h3>
+      <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px">
+        <sc-for list="{{ iconList }}" as="i" hint-placeholder-count="8">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px 0;border:1px solid var(--color-divider)"><svg viewBox="0 0 24 24" style="width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="{{ i.d }}"></path></svg><span style="font-size:12px">{{ i.name }}</span></div>
+        </sc-for>
+      </div>
+      <p style="font-size:14px;margin:0">Lucide, streg 1,5, 20–24 dp. Ikoner står altid ved siden af tekst, aldrig alene som status.</p>
+      <div style="display:flex;flex-direction:column;border-top:1px solid var(--color-divider)">
+        <sc-for list="{{ tone }}" as="t" hint-placeholder-count="4">
+          <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--color-divider);font-size:14px"><span>{{ t.yes }}</span><span style="color:var(--color-neutral-600);text-decoration:line-through">{{ t.no }}</span></div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="03 pixi" style="width:2560px;padding:120px 80px 0;display:flex;flex-direction:column;gap:32px">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:48px">
+    <div><h6 class="text-muted" style="margin:0 0 8px">03</h6><h2 style="font-size:48px;margin:0">pixi · tilstande</h2></div>
+    <p style="margin:0;max-width:760px;font-size:15px;text-wrap:pretty">Basen er din tegning, aflæst pixel for pixel og vist 3×. Neutral er tegningen uændret; de andre tilstande skifter kun øjne, mund og bryst. Højst 4 frames, ca. 2 fps, og kun mens skærmen er tændt eller i brug.</p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:32px">
+    <sc-for list="{{ states }}" as="s" hint-placeholder-count="10">
+      <div class="blueprint" style="display:flex;flex-direction:column"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="background:#FFFFFF;height:220px;display:grid;place-items:center;border-bottom:1px solid var(--color-divider);position:relative"><img src="{{ s.img }}" style="width:153px;height:138px;image-rendering:pixelated"><img src="{{ s.img }}" style="position:absolute;right:10px;bottom:10px;width:51px;height:46px;image-rendering:pixelated"></div>
+        <div style="padding:16px 18px;display:flex;flex-direction:column;gap:6px">
+          <div style="display:flex;justify-content:space-between;align-items:baseline"><span style="font-family:var(--font-heading);font-weight:600;font-size:22px">{{ s.name }}</span><span class="tag tag-accent">{{ s.frames }}</span></div>
+          <span style="font-size:14px;line-height:1.45;color:var(--color-neutral-800)">{{ s.when }}</span>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+</section>
+
+<section data-screen-label="04 pixi-sync" style="width:2560px;padding:120px 80px 0;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:48px">
+    <div><h6 class="text-muted" style="margin:0 0 8px">04</h6><h2 style="font-size:48px;margin:0">pixi-sync · Android</h2></div>
+    <p style="margin:0;max-width:760px;font-size:15px;text-wrap:pretty">Fairphone 5, Material 3 med dynamisk farve. Én skærm, du åbner sjældent. Status øverst, detaljer som rolige linjer, én handling i bunden. Skift pixi-tilstand og tema under Tweaks.</p>
+  </div>
+
+  <h4 style="margin:0">Hovedskærm</h4>
+  <div style="display:flex;gap:48px;flex-wrap:wrap">
+    <sc-for list="{{ mains }}" as="t" hint-placeholder-count="2">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="{{ t.vars }}">
+            <div style="width:360px;height:760px;display:flex;flex-direction:column">
+              <div style="height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-family:var(--mono);font-size:12px;opacity:.7"><span>09:12</span><span>84 %</span></div>
+              <div style="flex:1;display:flex;flex-direction:column;padding:4px 20px 24px">
+                <div style="display:flex;align-items:center;justify-content:space-between;height:48px"><span style="font-family:var(--font-heading);font-weight:600;font-size:19px">pixi-sync</span><button class="btn btn-ghost btn-icon" style="width:48px;height:48px;color:var(--color-text)"><svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="{{ ic.sliders }}"></path></svg></button></div>
+                <div style="display:flex;justify-content:center;padding:40px 0 28px"><img src="{{ main.img }}" style="width:153px;height:138px;image-rendering:pixelated"></div>
+                <h1 style="font-size:38px;margin:0 0 8px;text-align:center">{{ main.title }}</h1>
+                <p style="text-align:center;font-family:var(--mono);font-size:14px;opacity:.75;margin:0">{{ main.sub }}</p>
+                <div style="margin-top:44px;display:flex;flex-direction:column">
+                  <sc-for list="{{ main.rows }}" as="r" hint-placeholder-count="3">
+                    <div style="display:flex;justify-content:space-between;align-items:center;min-height:52px;border-top:1px solid var(--color-divider);gap:12px"><span style="display:flex;gap:12px;align-items:center;font-size:15px"><svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;opacity:.7"><path d="{{ r.icon }}"></path></svg>{{ r.k }}</span><span style="font-family:var(--mono);font-size:14px">{{ r.v }}</span></div>
+                  </sc-for>
+                </div>
+                <div style="margin-top:auto;display:flex;flex-direction:column;gap:12px">
+                  <button class="btn btn-primary blueprint" style="height:56px;width:100%;font-size:18px;gap:10px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="{{ ic.refresh }}"></path></svg>Synkronisér nu</button>
+                  <span style="text-align:center;font-size:13px;opacity:.65">Synkroniserer selv hver time.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <span style="font-size:13px;color:var(--color-neutral-700)">{{ t.label }}</span>
+      </div>
+    </sc-for>
+  </div>
+
+  <h4 style="margin:24px 0 0">Første opstart</h4>
+  <div style="display:flex;gap:48px;flex-wrap:wrap">
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="--color-bg:#1d1f20;--color-surface:#2b2b2d;--color-text:#f5f5f8;--color-divider:rgba(245,245,248,0.16);--color-accent:var(--seed);--color-accent-600:color-mix(in oklch, var(--seed), white 18%);--color-accent-700:color-mix(in oklch, var(--seed), white 32%);background:#1d1f20;color:#f5f5f8;width:360px;height:760px;display:flex;flex-direction:column">
+        <div style="height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-family:var(--mono);font-size:12px;opacity:.7"><span>09:12</span><span>84 %</span></div>
+        <div style="flex:1;display:flex;flex-direction:column;padding:16px 20px 24px">
+          <div style="display:flex;gap:4px"><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--color-divider)"></div><div style="flex:1;height:3px;background:var(--color-divider)"></div><div style="flex:1;height:3px;background:var(--color-divider)"></div></div>
+          <span style="font-family:var(--mono);font-size:12px;opacity:.65;margin-top:10px">Trin 1 af 4</span>
+          <div style="display:flex;justify-content:center;padding:72px 0 36px"><img src="{{ px.snakker }}" style="width:153px;height:138px;image-rendering:pixelated"></div>
+          <h1 style="font-size:36px;margin:0 0 14px">Hej, jeg er pixi.</h1>
+          <p style="font-size:16px;line-height:1.5;margin:0;opacity:.85;text-wrap:pretty">pixi-sync læser skridt, puls og søvn fra Health Connect og sender dem til din egen server. Ingen andre steder.</p>
+          <p style="font-size:16px;line-height:1.5;margin:12px 0 0;opacity:.85">Opsætningen tager et par minutter.</p>
+          <button class="btn btn-primary blueprint" style="margin-top:auto;height:56px;width:100%;font-size:18px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Kom i gang</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="--color-bg:#1d1f20;--color-surface:#2b2b2d;--color-text:#f5f5f8;--color-divider:rgba(245,245,248,0.16);--color-accent:var(--seed);--color-accent-600:color-mix(in oklch, var(--seed), white 18%);--color-accent-700:color-mix(in oklch, var(--seed), white 32%);background:#1d1f20;color:#f5f5f8;width:360px;height:760px;display:flex;flex-direction:column">
+        <div style="height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-family:var(--mono);font-size:12px;opacity:.7"><span>09:13</span><span>84 %</span></div>
+        <div style="flex:1;display:flex;flex-direction:column;padding:16px 20px 24px">
+          <div style="display:flex;gap:4px"><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--color-divider)"></div><div style="flex:1;height:3px;background:var(--color-divider)"></div></div>
+          <span style="font-family:var(--mono);font-size:12px;opacity:.65;margin-top:10px">Trin 2 af 4</span>
+          <h1 style="font-size:32px;margin:28px 0 10px">Adgang til Health Connect</h1>
+          <p style="font-size:15px;line-height:1.5;margin:0 0 20px;opacity:.85">pixi-sync læser kun. Den skriver aldrig til Health Connect.</p>
+          <div style="display:flex;flex-direction:column">
+            <sc-for list="{{ perms }}" as="p" hint-placeholder-count="5">
+              <div style="display:flex;align-items:center;gap:14px;min-height:64px;border-top:1px solid var(--color-divider)">
+                <svg viewBox="0 0 24 24" style="width:22px;height:22px;flex:none;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;opacity:.75"><path d="{{ p.icon }}"></path></svg>
+                <div style="flex:1;display:flex;flex-direction:column"><span style="font-size:15px">{{ p.name }}</span><span style="font-size:12px;opacity:.65">{{ p.d }}</span></div>
+                <sc-if value="{{ p.ok }}" hint-placeholder-val="{{ true }}"><span style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--seed)"><svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="{{ ic.check }}"></path></svg>Givet</span></sc-if>
+                <sc-if value="{{ p.ask }}" hint-placeholder-val="{{ false }}"><button class="btn btn-secondary" style="min-height:44px;font-size:14px;color:var(--color-text)">{{ p.btn }}</button></sc-if>
+              </div>
+            </sc-for>
+          </div>
+          <button class="btn btn-primary blueprint" style="margin-top:auto;height:56px;width:100%;font-size:18px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Åbn Health Connect</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="--color-bg:#1d1f20;--color-surface:#2b2b2d;--color-text:#f5f5f8;--color-divider:rgba(245,245,248,0.16);--color-accent:var(--seed);--color-accent-600:color-mix(in oklch, var(--seed), white 18%);--color-accent-700:color-mix(in oklch, var(--seed), white 32%);background:#1d1f20;color:#f5f5f8;width:360px;height:760px;display:flex;flex-direction:column">
+        <div style="height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-family:var(--mono);font-size:12px;opacity:.7"><span>09:14</span><span>84 %</span></div>
+        <div style="flex:1;display:flex;flex-direction:column;padding:16px 20px 24px">
+          <div style="display:flex;gap:4px"><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--color-divider)"></div></div>
+          <span style="font-family:var(--mono);font-size:12px;opacity:.65;margin-top:10px">Trin 3 af 4</span>
+          <h1 style="font-size:32px;margin:28px 0 10px">Din server</h1>
+          <p style="font-size:15px;line-height:1.5;margin:0 0 28px;opacity:.85">Hvor skal data hen?</p>
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <div class="field"><label>Serveradresse</label><div class="input" style="min-height:52px;display:flex;align-items:center;font-family:var(--mono);font-size:14px;border-color:var(--seed)">https://hub.home.lan</div></div>
+            <div class="field"><label>Token</label><div class="input" style="min-height:52px;display:flex;align-items:center;justify-content:space-between;font-family:var(--mono);font-size:14px"><span>••••••••••••3f9a</span><svg viewBox="0 0 24 24" style="width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;opacity:.7"><path d="{{ ic.lock }}"></path></svg></div><span style="display:block;font-size:12px;opacity:.65;margin-top:8px">Lav et token på serveren med <span style="font-family:var(--mono)">pixi token new</span>.</span></div>
+          </div>
+          <div style="margin-top:auto;display:flex;flex-direction:column;gap:8px">
+            <button class="btn btn-primary blueprint" style="height:56px;width:100%;font-size:18px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Test forbindelsen</button>
+            <button class="btn btn-ghost" style="height:48px;width:100%;font-size:16px">Scan QR-kode i stedet</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="--color-bg:#1d1f20;--color-surface:#2b2b2d;--color-text:#f5f5f8;--color-divider:rgba(245,245,248,0.16);--color-accent:var(--seed);--color-accent-600:color-mix(in oklch, var(--seed), white 18%);--color-accent-700:color-mix(in oklch, var(--seed), white 32%);background:#1d1f20;color:#f5f5f8;width:360px;height:760px;display:flex;flex-direction:column">
+        <div style="height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-family:var(--mono);font-size:12px;opacity:.7"><span>09:15</span><span>84 %</span></div>
+        <div style="flex:1;display:flex;flex-direction:column;padding:16px 20px 24px">
+          <div style="display:flex;gap:4px"><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--seed)"></div><div style="flex:1;height:3px;background:var(--seed)"></div></div>
+          <span style="font-family:var(--mono);font-size:12px;opacity:.65;margin-top:10px">Trin 4 af 4</span>
+          <div style="display:flex;justify-content:center;padding:72px 0 36px"><img src="{{ px.glad }}" style="width:153px;height:138px;image-rendering:pixelated"></div>
+          <h1 style="font-size:36px;margin:0 0 14px">Forbindelsen virker.</h1>
+          <p style="font-size:16px;line-height:1.5;margin:0;opacity:.85;text-wrap:pretty">Første synkronisering henter 30 dages historik. Det tager et par minutter og kører videre, selvom du lukker appen.</p>
+          <div style="margin-top:28px;display:flex;justify-content:space-between;min-height:52px;align-items:center;border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider)"><span style="font-size:15px">Server</span><span style="font-family:var(--mono);font-size:14px">hub.home.lan · 38 ms</span></div>
+          <button class="btn btn-primary blueprint" style="margin-top:auto;height:56px;width:100%;font-size:18px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>Færdig</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin:24px 0 0">Fejltilstande</h4>
+  <div style="display:flex;gap:48px;flex-wrap:wrap">
+    <sc-for list="{{ errors }}" as="e" hint-placeholder-count="4">
+      <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="--color-bg:#1d1f20;--color-surface:#2b2b2d;--color-text:#f5f5f8;--color-divider:rgba(245,245,248,0.16);--color-accent:var(--seed);--color-accent-600:color-mix(in oklch, var(--seed), white 18%);--color-accent-700:color-mix(in oklch, var(--seed), white 32%);background:#1d1f20;color:#f5f5f8;width:360px;height:760px;display:flex;flex-direction:column">
+          <div style="height:32px;display:flex;justify-content:space-between;align-items:center;padding:0 20px;font-family:var(--mono);font-size:12px;opacity:.7"><span>09:12</span><span>84 %</span></div>
+          <div style="flex:1;display:flex;flex-direction:column;padding:4px 20px 24px">
+            <div style="display:flex;align-items:center;justify-content:space-between;height:48px"><span style="font-family:var(--font-heading);font-weight:600;font-size:19px">pixi-sync</span><span class="tag tag-outline" style="color:var(--seed);border-color:var(--seed)">{{ e.tag }}</span></div>
+            <div style="display:flex;justify-content:center;padding:40px 0 28px"><img src="{{ e.img }}" style="width:153px;height:138px;image-rendering:pixelated"></div>
+            <h2 style="font-size:30px;margin:0 0 12px">{{ e.title }}</h2>
+            <p style="font-size:15px;line-height:1.5;margin:0;opacity:.85;text-wrap:pretty">{{ e.body }}</p>
+            <div style="margin-top:24px;display:flex;flex-direction:column">
+              <sc-for list="{{ e.details }}" as="r" hint-placeholder-count="3">
+                <div style="display:flex;justify-content:space-between;align-items:center;min-height:44px;border-top:1px solid var(--color-divider);font-size:14px;gap:12px"><span>{{ r.k }}</span><span style="font-family:var(--mono)">{{ r.v }}</span></div>
+              </sc-for>
+            </div>
+            <div style="margin-top:auto;display:flex;flex-direction:column;gap:8px">
+              <button class="btn btn-primary blueprint" style="height:56px;width:100%;font-size:18px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>{{ e.primary }}</button>
+              <button class="btn btn-ghost" style="height:48px;width:100%;font-size:16px">{{ e.secondary }}</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </sc-for>
+  </div>
+
+  <h4 style="margin:24px 0 0">Ikon, notifikation og widget</h4>
+  <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h6 class="text-muted" style="margin:0">Adaptivt appikon · 108 dp, motiv i 72 dp-zonen</h6>
+      <div style="display:flex;gap:28px;align-items:flex-end;padding:32px;background:#2b2b2d">
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center"><div style="width:96px;height:96px;border-radius:50%;background:#000055;display:grid;place-items:center;overflow:hidden"><img src="{{ head }}" style="width:62px;height:46px;image-rendering:pixelated;margin-top:8px"></div><span style="font-size:12px;color:#f5f5f8">Cirkel</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center"><div style="width:96px;height:96px;border-radius:28px;background:#000055;display:grid;place-items:center;overflow:hidden"><img src="{{ head }}" style="width:62px;height:46px;image-rendering:pixelated;margin-top:8px"></div><span style="font-size:12px;color:#f5f5f8">Afrundet</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center"><div style="width:96px;height:96px;border-radius:50%;background:color-mix(in oklch, var(--seed), black 72%);display:grid;place-items:center;overflow:hidden"><img src="{{ headMono }}" style="width:62px;height:46px;image-rendering:pixelated;margin-top:8px"></div><span style="font-size:12px;color:#f5f5f8">Monokrom, tema</span></div>
+        <div style="display:flex;flex-direction:column;gap:8px;align-items:center"><div style="width:48px;height:48px;border-radius:50%;background:#000055;display:grid;place-items:center;overflow:hidden"><img src="{{ head }}" style="width:31px;height:23px;image-rendering:pixelated;margin-top:4px"></div><span style="font-size:12px;color:#f5f5f8">48 dp</span></div>
+      </div>
+      <p style="font-size:14px;margin:0;text-wrap:pretty">Forgrund: pixis hoved i 1× pixels skaleret med heltal. Baggrund: Oxford-blå. Den monokrome udgave er silhuetten med visiret skåret ud, så Android kan farve den med temaet.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h6 class="text-muted" style="margin:0">Notifikationer · kun når noget varer ved</h6>
+      <div style="display:flex;flex-direction:column;gap:8px;padding:24px;background:#2b2b2d;color:#f5f5f8">
+        <div style="background:#1d1f20;padding:16px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:12px;opacity:.75"><div style="width:20px;height:20px;border-radius:50%;background:#000055;display:grid;place-items:center;overflow:hidden"><img src="{{ head }}" style="width:14px;height:10px;image-rendering:pixelated"></div>pixi-sync · <span style="font-family:var(--mono)">10:41</span></div>
+          <div style="font-size:15px;font-weight:500">Serveren svarer ikke</div>
+          <div style="font-size:14px;opacity:.8">214 poster venter. Næste forsøg <span style="font-family:var(--mono)">11:11</span>.</div>
+          <div style="display:flex;gap:20px;margin-top:4px;font-size:14px;color:var(--seed)"><span>Prøv nu</span><span>Detaljer</span></div>
+        </div>
+        <div style="background:#1d1f20;padding:16px;display:flex;flex-direction:column;gap:8px">
+          <div style="display:flex;align-items:center;gap:8px;font-size:12px;opacity:.75"><div style="width:20px;height:20px;border-radius:50%;background:#000055;display:grid;place-items:center;overflow:hidden"><img src="{{ head }}" style="width:14px;height:10px;image-rendering:pixelated"></div>pixi-sync · lydløs</div>
+          <div style="font-size:15px;font-weight:500">Synkroniserer</div>
+          <div style="display:flex;align-items:center;gap:10px"><div style="flex:1;height:4px;background:rgba(245,245,248,0.16)"><div style="width:56%;height:4px;background:var(--seed)"></div></div><span style="font-family:var(--mono);font-size:12px">120 / 214</span></div>
+        </div>
+      </div>
+      <p style="font-size:14px;margin:0;text-wrap:pretty">Fejl får en notifikation, når den har varet over 3 timer. Synkronisering vises lydløst og kun ved manuel sync eller historik. Når alt virker: ingen notifikation.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h6 class="text-muted" style="margin:0">Widget · 4×1 og 2×1</h6>
+      <div style="display:flex;flex-direction:column;gap:20px;padding:32px;background:color-mix(in oklch, var(--seed), black 75%)">
+        <div style="background:#1d1f20;color:#f5f5f8;border-radius:16px;height:96px;display:flex;align-items:center;gap:16px;padding:0 12px 0 16px">
+          <img src="{{ main.img }}" style="width:102px;height:92px;image-rendering:pixelated"><div style="flex:1;display:flex;flex-direction:column;gap:4px"><span style="font-family:var(--font-heading);font-weight:600;font-size:22px;line-height:1">{{ main.title }}</span><span style="font-family:var(--mono);font-size:13px;opacity:.75">07:41 · kø 0</span></div>
+          <div style="width:48px;height:48px;display:grid;place-items:center;color:var(--seed)"><svg viewBox="0 0 24 24" style="width:22px;height:22px;fill:none;stroke:currentColor;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round"><path d="{{ ic.refresh }}"></path></svg></div>
+        </div>
+        <div style="background:#1d1f20;color:#f5f5f8;border-radius:16px;width:180px;height:80px;display:flex;align-items:center;gap:12px;padding:0 14px">
+          <img src="{{ main.img }}" style="width:51px;height:46px;image-rendering:pixelated"><span style="font-family:var(--mono);font-size:18px">07:41</span>
+        </div>
+      </div>
+      <p style="font-size:14px;margin:0;text-wrap:pretty">Hjørnerne følger launcheren. Tryk på widgetten åbner appen, pilen synkroniserer. Opdateres kun efter en sync, aldrig på timer.</p>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="05 pixi-sense" style="width:2560px;padding:120px 80px 0;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:48px">
+    <div><h6 class="text-muted" style="margin:0 0 8px">05</h6><h2 style="font-size:48px;margin:0">pixi-sense · Pebble Time 2</h2></div>
+    <p style="margin:0;max-width:760px;font-size:15px;text-wrap:pretty">200×228 px, vist 2×. Kun Pebble-farver, hvid baggrund for læsbarhed i sollys. Urskærmen tegnes én gang i minuttet; pixi animerer kun i ét sekund efter et tryk. Knapper: tilbage til venstre, op/vælg/ned til højre.</p>
+  </div>
+  <div style="display:flex;gap:48px;flex-wrap:wrap;align-items:flex-start">
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="blueprint" style="width:402px;height:458px;overflow:visible"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="width:400px;height:456px;overflow:hidden">
+          <div style="width:200px;height:228px;transform:scale(2);transform-origin:0 0;background:#FFFFFF;color:#000055;position:relative;font-family:var(--font-heading);display:flex;flex-direction:column;align-items:center">
+            <div style="margin-top:12px;font-size:13px;letter-spacing:.1em;color:#005555;font-weight:600">LØR 11 OKT</div>
+            <img src="{{ pw.neutral }}" style="width:102px;height:92px;margin-top:6px;image-rendering:pixelated">
+            <div style="font-size:58px;line-height:1;font-weight:600;margin-top:2px;letter-spacing:-0.01em">07:41</div>
+            <div style="position:absolute;bottom:8px;left:10px;right:10px;display:flex;justify-content:space-between;font-size:13px;color:#005555;font-weight:600"><span>READINESS 72</span><span style="color:var(--pseed)">● 07:38</span></div>
+          </div>
+        </div>
+      </div>
+      <span style="font-size:13px;color:var(--color-neutral-700)">Urskærm · prikken er sidste sync i temaets Pebble-accent</span>
+    </div>
+
+    <sc-for list="{{ ready }}" as="r" hint-placeholder-count="2">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <div class="blueprint" style="width:402px;height:458px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+          <div style="width:400px;height:456px;overflow:hidden">
+            <div style="width:200px;height:228px;transform:scale(2);transform-origin:0 0;background:#FFFFFF;color:#000055;font-family:var(--font-heading);display:flex;flex-direction:column;align-items:center">
+              <img src="{{ r.img }}" style="width:102px;height:92px;margin-top:14px;image-rendering:pixelated">
+              <div style="display:flex;align-items:center;gap:10px;margin-top:8px">
+                <span style="font-size:54px;line-height:1;font-weight:600">{{ r.score }}</span>
+                <div style="display:flex;flex-direction:column"><span style="font-size:12px;letter-spacing:.1em;color:#005555;font-weight:600">READINESS</span><span style="font-size:22px;font-weight:600;line-height:1.1">{{ r.label }}</span></div>
+              </div>
+              <div style="display:flex;gap:3px;margin-top:10px">
+                <sc-for list="{{ r.on }}" as="x" hint-placeholder-count="5"><div style="width:13px;height:8px;background:#0055AA"></div></sc-for>
+                <sc-for list="{{ r.off }}" as="x" hint-placeholder-count="5"><div style="width:13px;height:8px;background:#AAAAAA"></div></sc-for>
+              </div>
+              <div style="font-family:var(--font-body);font-size:13px;margin-top:10px;color:#000055">{{ r.note }}</div>
+            </div>
+          </div>
+        </div>
+        <span style="font-size:13px;color:var(--color-neutral-700)">{{ r.caption }}</span>
+      </div>
+    </sc-for>
+
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="blueprint" style="width:402px;height:458px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="width:400px;height:456px;overflow:hidden">
+          <div style="width:200px;height:228px;transform:scale(2);transform-origin:0 0;background:#FFFFFF;color:#000055;font-family:var(--font-heading);position:relative">
+            <div style="position:absolute;left:0;top:0;width:170px;height:24px;background:#005555;color:#FFFFFF;display:flex;align-items:center;justify-content:space-between;padding:0 8px;font-size:14px;font-weight:600"><span>Hurtig log</span><span>07:30</span></div>
+            <div style="position:absolute;left:0;top:30px;width:170px;padding:4px 8px 6px 10px;border-left:4px solid #0055AA">
+              <div style="font-size:14px;font-weight:600;color:#005555">Hjernefrisk</div>
+              <div style="display:flex;align-items:baseline;gap:3px"><span style="font-size:46px;line-height:1;font-weight:600">7</span><span style="font-size:18px;color:#555555">/10</span></div>
+              <div style="display:flex;gap:2px;margin-top:4px"><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#0055AA"></div><div style="width:12px;height:6px;background:#AAAAAA"></div><div style="width:12px;height:6px;background:#AAAAAA"></div><div style="width:12px;height:6px;background:#AAAAAA"></div></div>
+            </div>
+            <div style="position:absolute;left:0;top:122px;width:170px;padding:4px 8px 4px 14px">
+              <div style="font-size:14px;font-weight:600;color:#005555">Hovedpine</div>
+              <div style="display:flex;align-items:baseline;gap:3px"><span style="font-size:32px;line-height:1;font-weight:600">0</span><span style="font-size:16px;color:#555555">/3 · ingen</span></div>
+            </div>
+            <div style="position:absolute;left:10px;bottom:8px;font-size:12px;color:#555555;font-family:var(--font-body)">Vælg gemmer og går videre</div>
+            <div style="position:absolute;right:0;top:0;width:30px;height:228px;background:#000055;color:#FFFFFF;display:flex;flex-direction:column;justify-content:space-between;align-items:center;padding:32px 0">
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:square"><path d="{{ ic.up }}"></path></svg>
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;stroke:none"><path d="{{ ic.dot }}"></path></svg>
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.5;stroke-linecap:square"><path d="{{ ic.down }}"></path></svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span style="font-size:13px;color:var(--color-neutral-700)">Hurtig log · op/ned ændrer, vælg gemmer</span>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <div class="blueprint" style="width:402px;height:458px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="width:400px;height:456px;overflow:hidden">
+          <div style="width:200px;height:228px;transform:scale(2);transform-origin:0 0;background:#FFFFFF;color:#000055;font-family:var(--font-heading);position:relative">
+            <div style="display:flex;align-items:center;gap:10px;padding:12px 10px 0">
+              <img src="{{ pw.sover }}" style="width:51px;height:46px;image-rendering:pixelated">
+              <div style="display:flex;flex-direction:column"><span style="font-size:12px;letter-spacing:.1em;color:#005555;font-weight:600">SØVN I NAT</span><span style="font-size:34px;line-height:1;font-weight:600">7 t 12 m</span></div>
+            </div>
+            <div style="position:absolute;left:10px;top:72px;width:180px;height:68px">
+              <sc-for list="{{ hyp }}" as="h" hint-placeholder-count="12"><div style="position:absolute;left:{{ h.l }};width:{{ h.w }};top:{{ h.t }};height:13px;background:{{ h.c }}"></div></sc-for>
+            </div>
+            <div style="position:absolute;left:10px;right:10px;top:144px;display:flex;justify-content:space-between;font-size:12px;color:#555555"><span>22:48</span><span>06:10</span></div>
+            <div style="position:absolute;left:10px;right:10px;top:164px;display:grid;grid-template-columns:1fr 1fr 1fr;font-size:13px;line-height:1.25">
+              <div><div style="display:flex;align-items:center;gap:4px;color:#555555"><span style="width:8px;height:8px;background:#000055"></span>Dyb</div><div style="font-weight:600">1 t 40</div></div>
+              <div><div style="display:flex;align-items:center;gap:4px;color:#555555"><span style="width:8px;height:8px;background:#0055AA"></span>Let</div><div style="font-weight:600">4 t 05</div></div>
+              <div><div style="display:flex;align-items:center;gap:4px;color:#555555"><span style="width:8px;height:8px;background:#55AAAA"></span>REM</div><div style="font-weight:600">1 t 27</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span style="font-size:13px;color:var(--color-neutral-700)">Søvn · faser som søjler, vågen øverst</span>
+    </div>
+  </div>
+</section>
+
+<section data-screen-label="06 pixi-hub" style="width:2560px;padding:120px 80px 120px;display:flex;flex-direction:column;gap:40px">
+  <div style="display:flex;justify-content:space-between;align-items:end;gap:48px">
+    <div><h6 class="text-muted" style="margin:0 0 8px">06</h6><h2 style="font-size:48px;margin:0">pixi-hub · terminal og note</h2></div>
+    <p style="margin:0;max-width:760px;font-size:15px;text-wrap:pretty">Textual-TUI i btop-stil. Alle farver kommer fra Omarchy-temaet: baggrund, tekst, dæmpet og accent. Fokuseret panel får accent-rammen. Statusnoten er ren Markdown og skrives om hver time.</p>
+  </div>
+
+  <div style="display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:48px;align-items:start">
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="background:var(--tbg);color:var(--tfg);font-family:var(--mono);font-size:13px;line-height:1.55">
+        <div style="display:flex;justify-content:space-between;padding:10px 16px;border-bottom:1px solid var(--tmuted)"><span><span style="color:var(--seed);font-weight:600">pixi-hub</span>  hub.home.lan</span><span>lør 11 okt 07:44</span></div>
+        <div style="display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:22px;padding:24px 16px 16px">
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <div style="position:relative;border:1px solid var(--seed);padding:16px 14px 10px">
+              <span style="position:absolute;top:-10px;left:10px;padding:0 6px;background:var(--tbg);color:var(--seed)">1 moduler</span>
+              <div style="display:grid;grid-template-columns:1fr auto auto auto;column-gap:22px;row-gap:2px">
+                <span style="color:var(--tmuted)">modul</span><span style="color:var(--tmuted)">sidst</span><span style="color:var(--tmuted)">plan</span><span style="color:var(--tmuted)">status</span>
+                <sc-for list="{{ modules }}" as="m" hint-placeholder-count="5">
+                  <span style="{{ m.sel }}"><span style="{{ m.dotc }}">{{ m.dot }}</span> {{ m.name }}</span><span style="{{ m.sel }}">{{ m.last }}</span><span style="{{ m.sel }}">{{ m.plan }}</span><span style="{{ m.sel }}">{{ m.status }}</span>
+                </sc-for>
+              </div>
+            </div>
+            <div style="position:relative;border:1px solid var(--tmuted);padding:16px 14px 10px">
+              <span style="position:absolute;top:-10px;left:10px;padding:0 6px;background:var(--tbg);color:var(--tfg)">2 sidste kørsler</span>
+              <div style="display:grid;grid-template-columns:auto 1fr auto auto;column-gap:22px;row-gap:2px">
+                <sc-for list="{{ runs }}" as="r" hint-placeholder-count="6">
+                  <span style="color:var(--tmuted)">{{ r.t }}</span><span>{{ r.job }}</span><span style="text-align:right">{{ r.dur }}</span><span style="{{ r.c }}">{{ r.res }}</span>
+                </sc-for>
+              </div>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:22px">
+            <div style="position:relative;border:1px solid var(--tmuted);padding:16px 14px 12px;display:flex;gap:16px;align-items:center">
+              <span style="position:absolute;top:-10px;left:10px;padding:0 6px;background:var(--tbg)">3 pixi</span>
+              {{ termMain }}
+              <div style="display:flex;flex-direction:column;gap:2px"><span style="color:var(--seed)">{{ mainFace }}</span><span>{{ main.title }}</span><span style="color:var(--tmuted)">sync 07:41 · kø 0</span></div>
+            </div>
+            <div style="position:relative;border:1px solid var(--tmuted);padding:16px 14px 10px">
+              <span style="position:absolute;top:-10px;left:10px;padding:0 6px;background:var(--tbg)">4 ur-sync</span>
+              <div style="display:grid;grid-template-columns:auto 1fr;column-gap:18px">
+                <span style="color:var(--tmuted)">senest</span><span>07:38 · 6 min siden</span>
+                <span style="color:var(--tmuted)">app</span><span>pixi-sense 0.3 · batteri 82 %</span>
+                <span style="color:var(--tmuted)">log</span><span>hjernefrisk 7 · hovedpine 0</span>
+              </div>
+            </div>
+            <div style="position:relative;border:1px solid var(--tmuted);padding:16px 14px 10px">
+              <span style="position:absolute;top:-10px;left:10px;padding:0 6px;background:var(--tbg)">5 træfsikkerhed</span>
+              <div style="color:var(--tmuted)">readiness mod egen vurdering, 30 d</div>
+              <div style="display:flex;align-items:baseline;gap:18px;margin-top:4px"><span style="font-size:22px;color:var(--seed);letter-spacing:0">▃▄▄▅▃▆▅▆▇▆▅▆▇▇▆</span></div>
+              <div>MAE 1,1 · r 0,62 <span style="color:var(--tmuted)">(sep: 1,4)</span></div>
+            </div>
+          </div>
+        </div>
+        <div style="display:flex;gap:22px;padding:8px 16px;border-top:1px solid var(--tmuted)"><span><span style="color:var(--seed)">↑↓</span> vælg</span><span><span style="color:var(--seed)">r</span> kør</span><span><span style="color:var(--seed)">l</span> log</span><span><span style="color:var(--seed)">1-5</span> panel</span><span><span style="color:var(--seed)">?</span> hjælp</span><span><span style="color:var(--seed)">q</span> afslut</span></div>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h4 style="margin:0">pixi i terminalen</h4>
+      <p style="font-size:14px;margin:0;text-wrap:pretty">Halvblokke (▀▄) giver to pixels pr. tegn: 51×46 bliver 51×23 tegn i pixis egne farver. Uden truecolor bruges 1-bit-blokke i tekstfarven. I statuslinjer et kort ansigt.</p>
+      <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+        <div style="background:var(--tbg);color:var(--tfg);font-family:var(--mono);padding:20px;display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:14px 24px;align-items:center;font-size:13px">
+          <span style="color:var(--tmuted)">farve</span><span style="color:var(--tmuted)">1-bit</span><span style="color:var(--tmuted)">kort</span>
+          <sc-for list="{{ ascii }}" as="a" hint-placeholder-count="7">
+            {{ a.color }}{{ a.bits }}<span><span style="color:var(--seed)">{{ a.face }}</span> <span style="color:var(--tmuted)">{{ a.name }}</span></span>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h4 style="margin:24px 0 0">Statusnote i Obsidian · <span style="font-family:var(--mono);font-size:16px">pixi/status.md</span></h4>
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start">
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <pre style="margin:0;background:var(--tbg);color:var(--tfg);font-family:var(--mono);font-size:14px;line-height:1.6;padding:28px;white-space:pre-wrap">---
+opdateret: 2026-10-11 07:42
+pixi: glad
+readiness: 72
+---
+# pixi · lørdag 11. oktober
+
+![[pixi-glad.png|100]]
+
+&gt; [!info] Alt virker
+&gt; Sidst synkroniseret 07:41 · 0 poster i kø
+
+## I dag
+| | |
+|---|--:|
+| Readiness | 72 |
+| Søvn | 7 t 12 m |
+| Hvilepuls | 58 |
+| Skridt | 3 412 |
+| Hjernefrisk | 7 / 10 |
+| Hovedpine | 0 / 3 |
+
+## Moduler
+- [x] health-ingest · 07:41
+- [x] readiness-model · 07:42
+- [x] pebble-push · 07:38
+- [ ] backup · pauset siden 9. okt.
+
+## Kørsler
+`07:41` health-ingest · 214 poster · 1,2 s</pre>
+    </div>
+    <div class="blueprint"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+      <div style="background:var(--tbg);color:var(--tfg);padding:36px 44px;display:flex;flex-direction:column;gap:14px;font-size:16px">
+        <h1 style="margin:0;font-size:34px">pixi · lørdag 11. oktober</h1>
+        <img src="{{ px.glad }}" style="width:102px;height:92px;image-rendering:pixelated">
+        <div style="border-left:2px solid var(--seed);background:color-mix(in oklch, var(--seed) 10%, transparent);padding:12px 16px"><div style="color:var(--seed);font-weight:600">Alt virker</div><div>Sidst synkroniseret <span style="font-family:var(--mono)">07:41</span> · 0 poster i kø</div></div>
+        <h3 style="margin:10px 0 0;font-size:22px">I dag</h3>
+        <div style="display:grid;grid-template-columns:1fr auto;font-size:15px">
+          <span style="padding:6px 0;border-bottom:1px solid var(--tmuted)">Readiness</span><span style="padding:6px 0;border-bottom:1px solid var(--tmuted);font-family:var(--mono)">72</span>
+          <span style="padding:6px 0;border-bottom:1px solid var(--tmuted)">Søvn</span><span style="padding:6px 0;border-bottom:1px solid var(--tmuted);font-family:var(--mono)">7 t 12 m</span>
+          <span style="padding:6px 0;border-bottom:1px solid var(--tmuted)">Hvilepuls</span><span style="padding:6px 0;border-bottom:1px solid var(--tmuted);font-family:var(--mono)">58</span>
+          <span style="padding:6px 0;border-bottom:1px solid var(--tmuted)">Skridt</span><span style="padding:6px 0;border-bottom:1px solid var(--tmuted);font-family:var(--mono)">3 412</span>
+          <span style="padding:6px 0;border-bottom:1px solid var(--tmuted)">Hjernefrisk</span><span style="padding:6px 0;border-bottom:1px solid var(--tmuted);font-family:var(--mono)">7 / 10</span>
+          <span style="padding:6px 0;border-bottom:1px solid var(--tmuted)">Hovedpine</span><span style="padding:6px 0;border-bottom:1px solid var(--tmuted);font-family:var(--mono)">0 / 3</span>
+        </div>
+        <h3 style="margin:10px 0 0;font-size:22px">Moduler</h3>
+        <div style="display:flex;flex-direction:column;gap:4px;font-size:15px">
+          <span>☑ health-ingest · 07:41</span><span>☑ readiness-model · 07:42</span><span>☑ pebble-push · 07:38</span><span style="color:var(--tmuted)">☐ backup · pauset siden 9. okt.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;theme&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Tokyo Night&quot;,&quot;Catppuccin&quot;,&quot;Gruvbox&quot;,&quot;Everforest&quot;,&quot;Nord&quot;,&quot;Industry&quot;],&quot;default&quot;:&quot;Tokyo Night&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tema&quot;},&quot;mainState&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;neutral&quot;,&quot;glad&quot;,&quot;traet&quot;,&quot;sover&quot;,&quot;synk&quot;,&quot;offline&quot;,&quot;fejl&quot;],&quot;default&quot;:&quot;neutral&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;pixi&quot;},&quot;animate&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;pixi&quot;}}">
+const P={W:'#FFFFFF',G:'#AAAAAA',S:'#55AAAA',B:'#0055AA',Q:'#005555',O:'#000055',K:'#000000',T:'#00FFFF',L:'#AAFFFF',R:'#FF55AA'};
+const GW=51,GH=46;
+const THEMES={
+ 'Tokyo Night':{seed:'#7aa2f7',bg:'#1a1b26',fg:'#c0caf5',muted:'#565f89'},
+ 'Catppuccin':{seed:'#89b4fa',bg:'#1e1e2e',fg:'#cdd6f4',muted:'#6c7086'},
+ 'Gruvbox':{seed:'#d79921',bg:'#282828',fg:'#ebdbb2',muted:'#928374'},
+ 'Everforest':{seed:'#a7c080',bg:'#2d353b',fg:'#d3c6aa',muted:'#7a8478'},
+ 'Nord':{seed:'#88c0d0',bg:'#2e3440',fg:'#d8dee9',muted:'#616e88'},
+ 'Industry':{seed:'#749dc4',bg:'#1d1f20',fg:'#f5f5f8',muted:'#7a7a7d'}
+};
+const IC={
+ refresh:'M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8 M21 3v5h-5 M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16 M8 16H3v5',
+ sliders:'M20 7h-9 M14 17H5 M17 14a3 3 0 1 0 0 6a3 3 0 1 0 0-6 M7 4a3 3 0 1 0 0 6a3 3 0 1 0 0-6',
+ server:'M4 2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z M4 14h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4a2 2 0 0 1 2-2z M6 6h.01 M6 18h.01',
+ check:'M20 6 9 17l-5-5',
+ wifiOff:'M12 20h.01 M8.5 16.429a5 5 0 0 1 7 0 M5 12.859a10 10 0 0 1 5.17-2.69 M19 12.859a10 10 0 0 0-2.007-1.523 M2 8.82a15 15 0 0 1 4.177-2.643 M22 8.82a15 15 0 0 0-11.288-3.764 M2 2l20 20',
+ heart:'M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z',
+ moon:'M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z',
+ activity:'M22 12h-4l-3 9L9 3l-3 9H2',
+ foot:'M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z M16 17h4 M4 13h4',
+ clock:'M12 2a10 10 0 1 0 0 20a10 10 0 1 0 0-20 M12 6v6l4 2',
+ history:'M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8 M3 3v5h5 M12 7v5l4 2',
+ lock:'M5 11h14a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2z M7 11V7a5 5 0 0 1 10 0v4',
+ inbox:'M22 12h-6l-2 3h-4l-2-3H2 M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z',
+ up:'M18 15l-6-6-6 6', down:'M6 9l6 6 6-6', dot:'M12 7a5 5 0 1 0 0 10a5 5 0 1 0 0-10'
+};
+const BASE=[".................OOOOOOOOOOOOOOOKKK................","..............GOOSSSSSSSSSSSSSSSSSOOK..............","............GOQSSSBBBBBBBBBBBBBBBBSSSKK............","..........GOQSSSBBOOOOOOOOOOOOOOOBBBSSQOSG.........",".........GQSSBBBOOGGWWWWWWWWWWWGGOOOQBSBQQG........","........GQSSBQOOGGWWWWWWWWWWWWWWWGGBKOQBSSQ........",".......GQSSBOOOWWWWWWWWWWWWWWWWWWWWGBOOQBSOG.......","......GQSBBOOGWWWWWWWWWWWWWWWWWWWWWWGGQOQBSOG......","......OSBBOOGWWWWWWWWWWWWWWWWWWWWWWWWWGQKQBSK......","......OSBOOWGWWWWWGGGGGGGGGGGGGGGWWWWWGGOKQSOG.....",".....OSSOOWWGWWGGGOOOOOOOOOOOOOOOGGGGWGWWKKBSK.....",".....OSBOGWWWGSOOOKKKKKKKKKKKKKKKOOOOGWWWGKQSOG....","....OGSOOWWWGOKKOOKKKKKKKKKKKKKKKKKKKOGWWWKKSGK....","....OGBOGWWWOKKOGGOKKKKKKKKKKKKKKKKKKKOGWWGKOGK....","....OGOOGWWOKKSGOOKKKKKKKKKKKKKKKKKKKKKBWWGKKGK....","...OOOOOGWWOKBBOKKKKKKKKKKKKKKKKKKKKKKKOWWGKKKKK...","..OOSSSOGWGOKSKKKKKKKKKKKKKKKKKKKKKKKKKKBWGKSSSKK..",".OROTTSOGWOOKKKKKKKKKKKKKKKKKKKKKKKKKKKKOWGKSTTKRK.","ORROSSSOGWOOKKKKTTTBKKKKKKKKKKKBTTTKKKKKOWGKSSSKRRK","ORROSSSOGWOOKKBTTTTTSKKKKKKKKKSTTTTTBKKKOWGKSSSKRRK","ORROSSSOGWOOKKBTTTTTSKKKKKKKKKSTTTTTBKKKOWGKSSSKRRK","ORROSSSOGWOOKKBTTTTTSKKKKKKKKKSTTTTTBKKKOWGKSSSKRRK","ORROSSSOGWOOKKBTTTTTSKKKKKKKKKSTTTTTBKKKOWGKSSSKRRK","ORROSSSOGWOOKKBTTTTTSKKKKKKKKKSTTTTTBKKKOWGKSSSKRRK","ORROBBBOGWKKKKKBTTTBKKKKKKKKKKKBTTTBKKKKOWGKBBBKRRK","ORROBBBOGWKKKKKKBBBKKKKKKKKKKKKKBBBKKKKKOWGKBBBKRRK",".OROBBQKGWKKKKKKKKKKKKSKKKKBBKKKKKKKKKKKOWGKQKQKRK.","..OOBBBOGWQKKKKKKKKKKKKBBKBSKKKKKKKKKKKOWWGKQKQKK..","...KKOOOGGWOKKKKKKKKKKKKSTSKKKKKKKKKKKKOWGGKKSKK...",".......OGGWOKKKKKKKKKKKKKKKKKKKKKKKKKKOGGGOKGSK....",".......OOGGWOKKKKKKKKKKKKKKKKKKKKKKSSBOWGOKGGK.....","........KBGGGOOOKKKKKKKKKKKKKKKKKOBSSSKOOKSOOG.....","........GOSGGWWGKKKKKKKKKKKKKKKKKOBBBBKSSSOGG......",".........KOSGGGWWWWKKKKKKKKKKKKKKGOOOOSSOOG........",".........GOOSGGGGGGWWWWWWWWWWWWWWGSSSSGOKG.........","..........GOKKBSGGGGGGGGGGGGGGGGGGGGQOOKG..........","............GOKKOGGGGGGGGGGGGGGGGGKKKBGG...........","...........GGOKKKKKKKKKKKKKKKKKKKKKKKGGG...........","..........GOOOOKKGGGKBBBBBBBBBKGGGKKOOOOG..........","..........OWWWGKKGGGGKKKKKKKKKGGGGKKGGWWOG.........",".........KWWWGGKSGGGGGGGGGGGGGGGGSSKGGWWWK.........","........KWWWGSGKGGGWWWWWWWWWWWWWGGGKSSGWWGK........","........KGGGGGKKGWWWWWKKKKKKKWWWWWGKKGGGGGK........","........KOOKOKKKGWWWWWKTTTTTKWWWWWGKKKKKOOK........",".......GOGGGSQKSGWWWWWKTTTTTKWWWWWGSKOSGGGOG.......",".......KGGGGGGKGGGWWWWKTTTTTKWWWWGGSKGGGGGGK......."].map(r=>[...r].map(c=>c==='.'?null:c));
+const EYES={g:["..QTQ..",".QTTTQ.","QTTBTTQ","TTB.BTT","TB...BT"],t:["QQQQQQQ","BTTTTTB","BTTTTTB",".BTTTB."],c:["T.....T","BT...TB",".BTTTB."],b:["BTTTTTB","QBBBBBQ"]};
+const EYEY={g:19,t:21,c:22,b:21};
+const MOUTH={g:[["T.......T",".TT...TT.","..TTTTT.."],25],f:[["..BTTTB.."],27],m:[["...TTT..."],27],o:[["..TTTTT..",".T.....T.","..TTTTT.."],25],w:[[".T..T..T.","T.TT.TT.T"],26]};
+const CHEST={glad:["TTTTT","TLLLT","TTTTT"],dim:["KKKKK","SSSSS","KKKKK"],heart:["TTKTT","TTTTT","KTTTK"],heartDim:["SSKSS","SSSSS","KSSSK"],off:["KKKKK","GGKGG","KKKKK"],err:["KKLKK","KKLKK","KKKKK"]};
+[0,1,2].forEach(i=>{const r=[...'KKKKK'];[0,2,4].forEach((p,j)=>r[p]=j===i?'T':'S');CHEST['dots'+i]=["KKKKK",r.join(''),"KKKKK"]});
+const FR={blinker:4,snakker:2,hjerte:2,synk:3,sover:2};
+function spec(s,f){switch(s){
+ case 'glad':return{e:'g',m:'g',c:'glad'};
+ case 'traet':return{e:'t',m:'f',c:'dim'};
+ case 'sover':return{e:'c',m:'m',c:'dim',z:f%2?2:1};
+ case 'blinker':return{e:f%4===3?'b':'n',m:'n',c:'n'};
+ case 'snakker':return{e:'n',m:f%2?'o':'n',c:'n'};
+ case 'hjerte':return{e:'g',m:'n',c:f%2?'heartDim':'heart'};
+ case 'synk':return{e:'n',m:'n',c:'dots'+(f%3)};
+ case 'offline':return{e:'n',m:'f',c:'off',dim:true};
+ case 'fejl':return{e:'n',e2:'b',m:'w',c:'err'};
+ default:return{e:'n',m:'n',c:'n'};
+}}
+function stamp(g,x0,y0,rows,dim,map){rows.forEach((r,dy)=>[...r].forEach((ch,dx)=>{if(ch==='.')return;let c=ch;if(dim&&(c==='T'||c==='L'))c='S';if(map&&map[c])c=map[c];const y=y0+dy,x=x0+dx;if(y>=0&&y<GH&&x>=0&&x<GW)g[y][x]=c}))}
+const clear=(g,x0,y0,x1,y1)=>{for(let y=y0;y<=y1;y++)for(let x=x0;x<=x1;x++)g[y][x]='K'};
+function grid(s,f,zc){
+ const g=BASE.map(r=>r.slice()),p=spec(s,f);
+ const eye=(e,x)=>{if(e==='n'){if(p.dim)for(let y=16;y<=26;y++)for(let i=x-1;i<=x+7;i++)if(g[y][i]==='T')g[y][i]='S';return}clear(g,x-1,16,x+7,26);stamp(g,x,EYEY[e],EYES[e])};
+ eye(p.e,14); eye(p.e2||p.e,30);
+ if(p.m!=='n'){clear(g,21,25,29,29);const m=MOUTH[p.m];stamp(g,21,m[1],m[0],p.dim)}
+ if(p.c!=='n')stamp(g,23,42,CHEST[p.c]);
+ if(p.z){const map={C:zc||'B'};stamp(g,45,0,["CCCC","..C.",".C..","CCCC"],false,map);if(p.z===2)stamp(g,41,0,["CCC",".C.","CCC"],false,map)}
+ return g;
+}
+function toURL(g,o){
+ const rows=o.rows||GH,cv=document.createElement('canvas');cv.width=GW;cv.height=rows;const ctx=cv.getContext('2d');
+ if(o.bg){ctx.fillStyle=o.bg;ctx.fillRect(0,0,GW,rows)}
+ for(let y=0;y<rows;y++)for(let x=0;x<GW;x++){let c=g[y][x];if(!c)continue;if(o.mono){if(c==='K')continue;ctx.fillStyle=o.mono}else ctx.fillStyle=P[c];ctx.fillRect(x,y,1,1)}
+ return cv.toDataURL();
+}
+function halfBlock(g,fs){
+ const h=React.createElement,lines=[];
+ for(let y=0;y<GH;y+=2){const sp=[];let cur=null;for(let x=0;x<GW;x++){const t=g[y][x],b=g[y+1]&&g[y+1][x];let ch,fg=null,bg=null;
+  if(!t&&!b)ch=' ';else if(!t){ch='▄';fg=b}else if(!b){ch='▀';fg=t}else{ch='▀';fg=t;bg=b}
+  const k=fg+'|'+bg;if(cur&&cur.k===k)cur.s+=ch;else{cur={k,s:ch,fg,bg};sp.push(cur)}}lines.push(sp)}
+ return h('div',{style:{fontFamily:'"JetBrains Mono",monospace',fontSize:fs,lineHeight:1,whiteSpace:'pre',letterSpacing:0}},lines.map((l,i)=>h('div',{key:i},l.map((s,j)=>h('span',{key:j,style:{color:s.fg?P[s.fg]:'transparent',background:s.bg?P[s.bg]:'transparent'}},s.s)))));
+}
+function bits(g,fs){
+ const on=c=>'WGTLSR'.includes(c||'#'),lines=[];
+ for(let y=0;y<GH;y+=2){let s='';for(let x=0;x<GW;x++){const t=on(g[y][x]),b=on(g[y+1]&&g[y+1][x]);s+=t&&b?'█':t?'▀':b?'▄':' '}lines.push(s)}
+ return React.createElement('div',{style:{fontFamily:'"JetBrains Mono",monospace',fontSize:fs,lineHeight:1,whiteSpace:'pre',color:'var(--tfg)'}},lines.join('\n'));
+}
+const near=hex=>{const n=parseInt(hex.slice(1),16);return '#'+[16,8,0].map(s=>(Math.round(((n>>s)&255)/85)*85).toString(16).padStart(2,'0')).join('').toUpperCase()};
+const FACE={neutral:'[•‿•]',glad:'[^‿^]',traet:'[–_–]',sover:'[-‿-] z',synk:'[•‿•] ⇅',offline:'[•_•] ×',fejl:'[•~-] !'};
+const NAME={neutral:'neutral',glad:'glad',traet:'træt',sover:'sover',synk:'synkroniserer',offline:'ingen forbindelse',fejl:'fejl'};
+
+class Component extends DCLogic {
+  state={t:0};
+  cache=new Map();
+  componentDidMount(){this.applyTheme();this.timer=setInterval(()=>{if(this.props.animate??true)this.setState(s=>({t:s.t+1}))},600)}
+  componentDidUpdate(){this.applyTheme()}
+  componentWillUnmount(){clearInterval(this.timer)}
+  theme(){return THEMES[this.props.theme]||THEMES['Tokyo Night']}
+  applyTheme(){const th=this.theme();if(this.applied===th)return;this.applied=th;const r=document.documentElement.style;r.setProperty('--seed',th.seed);r.setProperty('--tbg',th.bg);r.setProperty('--tfg',th.fg);r.setProperty('--tmuted',th.muted);r.setProperty('--pseed',near(th.seed))}
+  url(s,f,o={}){const k=[s,f,JSON.stringify(o)].join('|');if(!this.cache.has(k))this.cache.set(k,toURL(grid(s,f,o.zc),o));return this.cache.get(k)}
+  renderVals(){
+    const th=this.theme(),an=this.props.animate??true,t=this.state.t;
+    const fr=s=>an?t%(FR[s]||1):0;
+    const S=['neutral','glad','traet','sover','blinker','snakker','hjerte','synk','offline','fejl'];
+    const px={},pw={};S.forEach(s=>{px[s]=this.url(s,fr(s),{zc:'L'});pw[s]=this.url(s,fr(s),{bg:'#FFFFFF'})});
+    const ms=this.props.mainState||'neutral';
+    const MT={neutral:['Alt virker.','Sidst synkroniseret 07:41'],glad:['Alt virker.','Sidst synkroniseret 07:41'],traet:['Alt virker.','Sidst synkroniseret 07:41'],sover:['Alt virker.','Sidst synkroniseret 07:41'],synk:['Synkroniserer…','120 af 214 poster'],offline:['Serveren svarer ikke.','Sidst nået 07:41 · 214 i kø'],fejl:['Puls mangler adgang.','Skridt og søvn kører stadig']};
+    const offline=ms==='offline';
+    const main={img:px[ms==='neutral'?'blinker':ms],title:MT[ms][0],sub:MT[ms][1],rows:[
+      {icon:IC.inbox,k:'I kø',v:offline?'214 poster':ms==='synk'?'94 poster':'0 poster'},
+      {icon:offline?IC.wifiOff:IC.server,k:'Server',v:offline?'hub.home.lan · ikke nået':'hub.home.lan · ok'},
+      {icon:IC.clock,k:'Næste',v:offline?'nyt forsøg 08:11':'ca. 08:41'}]};
+    const DARK={'--color-bg':'#1d1f20','--color-surface':'#2b2b2d','--color-text':'#f5f5f8','--color-divider':'rgba(245,245,248,0.16)','--color-accent':'var(--seed)','--color-accent-600':'color-mix(in oklch, var(--seed), white 18%)','--color-accent-700':'color-mix(in oklch, var(--seed), white 32%)',background:'#1d1f20',color:'#f5f5f8'};
+    const LIGHT={'--color-bg':'#f2f2f3','--color-surface':'#e9e9ea','--color-text':'#1d1f20','--color-divider':'rgba(29,31,32,0.16)','--color-accent':'color-mix(in oklch, var(--seed), black 30%)','--color-accent-600':'color-mix(in oklch, var(--seed), black 40%)','--color-accent-700':'color-mix(in oklch, var(--seed), black 50%)',background:'#f2f2f3',color:'#1d1f20'};
+    const memo=(k,fn)=>{if(!this.cache.has(k))this.cache.set(k,fn());return this.cache.get(k)};
+    const tms=ms==='neutral'?'blinker':ms;
+    const termMainEl=memo('tm|'+tms+'|'+fr(tms),()=>halfBlock(grid(tms,fr(tms),'L'),'4.6px'));
+    const asc=['neutral','glad','traet','sover','synk','offline','fejl'].map(s=>memo('asc|'+s+'|'+fr(s),()=>{const g=grid(s,fr(s),'L');return{color:halfBlock(g,'4.5px'),bits:bits(g,'4.5px'),face:FACE[s],name:NAME[s]}}));
+    let acc=0;const tot=442,LV=['#AAAAAA','#55AAAA','#0055AA','#000055'];
+    const hyp=[[2,20],[3,45],[2,30],[1,18],[2,40],[3,35],[0,5],[2,45],[1,24],[2,50],[3,20],[2,30],[1,40],[0,5],[2,30],[1,5]].map(([l,m])=>{const o={l:(acc/tot*100)+'%',w:(m/tot*100)+'%',t:(l*17)+'px',c:LV[l]};acc+=m;return o});
+    const hg=grid('neutral',0);
+    return {
+      px,pw,main,ic:IC,themeName:this.props.theme||'Tokyo Night',pebbleHex:near(th.seed),
+      head:memo('head',()=>toURL(hg,{rows:38})),headMono:memo('headM',()=>toURL(hg,{rows:38,mono:'#f5f5f8'})),
+      termGlad:memo('tg',()=>halfBlock(grid('glad',0),'5px')),termMain:termMainEl,mainFace:FACE[ms],
+      ascii:asc,hyp,
+      mains:[{label:'Mørk · standard',vars:DARK},{label:'Lys · samme struktur',vars:LIGHT}],
+      palette:[['Hvid','#FFFFFF'],['Lysegrå','#AAAAAA'],['Grålig turkis','#55AAAA'],['Stålblå','#0055AA'],['Petrol','#005555'],['Oxford-blå','#000055'],['Sort','#000000'],['Turkis','#00FFFF'],['Lys turkis','#AAFFFF'],['Pink','#FF55AA']].map(([name,hex])=>({name,hex})),
+      spacing:[4,8,12,16,24,32].map(n=>({label:n+' dp',w:(n*6)+'px'})),
+      iconList:[['Synk',IC.refresh],['Server',IC.server],['Offline',IC.wifiOff],['Kø',IC.inbox],['Skridt',IC.foot],['Puls',IC.activity],['Søvn',IC.moon],['Indstil.',IC.sliders]].map(([name,d])=>({name,d})),
+      tone:[{yes:'Sidst synkroniseret 07:41',no:'Godt gået! Du er synkroniseret!'},{yes:'Serveren svarer ikke. Data venter i køen.',no:'FEJL 503: Forbindelse afvist'},{yes:'Ingen nye data siden i går',no:'Du har glemt at bære dit ur'},{yes:'Synkronisér nu',no:'Tryk her for at synkronisere'}],
+      states:S.map(s=>({img:pw[s],name:{neutral:'Neutral',glad:'Glad',traet:'Træt',sover:'Sover',blinker:'Blinker',snakker:'Snakker',hjerte:'Hjerte',synk:'Synkroniserer',offline:'Ingen forbindelse',fejl:'Fejl'}[s],frames:(FR[s]||1)+(FR[s]?' frames':' frame'),
+        when:{neutral:'Standard. Alt kører, intet at bemærke.',glad:'Høj readiness (70+) og efter en vellykket opsætning.',traet:'Lav readiness (under 45). Kun tilstanden, ingen opfordringer.',sover:'Om natten og i søvnvisningen. To frames med z.',blinker:'Tomgang. Et blink hvert par sekunder, kun mens skærmen er aktiv.',snakker:'Når pixi præsenterer noget, fx i opsætningen.',hjerte:'Pulsvisning og gode dage. Brystet pulserer.',synk:'Under synkronisering. Prikkerne på brystet løber.',offline:'Server eller ur kan ikke nås. Dæmpede øjne, intet drama.',fejl:'Noget kræver handling. Skæv mund og et roligt udråbstegn på brystet.'}[s]})),
+      perms:[{name:'Skridt',d:'Læses hver time',ok:true,icon:IC.foot},{name:'Puls',d:'Hvilepuls og løbende puls',ok:true,icon:IC.activity},{name:'Søvn',d:'Varighed og faser',ok:true,icon:IC.moon},{name:'Læsning i baggrunden',d:'Så sync kører uden at appen er åben',ask:true,btn:'Giv adgang',icon:IC.clock},{name:'Historik',d:'Data fra før i dag. Valgfri.',ask:true,btn:'Giv adgang',icon:IC.history}],
+      errors:[
+        {img:px.fejl,tag:'Health Connect',title:'Health Connect er ikke tilgængelig',body:'Appen mangler eller skal opdateres. pixi-sync kan ikke læse data uden den.',details:[{k:'Health Connect',v:'ikke fundet'},{k:'I kø',v:'0 poster'}],primary:'Åbn Play Butik',secondary:'Prøv igen'},
+        {img:px.fejl,tag:'Tilladelse',title:'Adgang til puls er slået fra',body:'Skridt og søvn synkroniseres stadig. Puls springes over, indtil du giver adgang igen.',details:[{k:'Skridt',v:'07:41'},{k:'Søvn',v:'07:41'},{k:'Puls',v:'siden 9. okt.'}],primary:'Giv adgang',secondary:'Fortsæt uden puls'},
+        {img:px.offline,tag:'Server',title:'Serveren svarer ikke',body:'Data gemmes på telefonen og sendes, når forbindelsen er tilbage. Du behøver ikke gøre noget.',details:[{k:'Server',v:'hub.home.lan'},{k:'Sidst nået',v:'07:41'},{k:'I kø',v:'214 poster'},{k:'Næste forsøg',v:'08:11'}],primary:'Prøv nu',secondary:'Ret serveradresse'},
+        {img:px.sover,tag:'Data',title:'Ingen nye data siden i går',body:'Health Connect har ikke fået nye målinger siden i går kl. 22:14. Ofte er det uret, der ikke har synkroniseret endnu.',details:[{k:'Seneste måling',v:'i går 22:14'},{k:'Server',v:'hub.home.lan · ok'}],primary:'Åbn Health Connect',secondary:'OK'}],
+      ready:[{img:pw.glad,score:'72',label:'God dag',note:'Belastning som normalt er fin.',on:[1,2,3,4,5,6,7],off:[1,2,3],caption:'Tilstand · glad (72)'},{img:pw.traet,score:'41',label:'Træt',note:'Tag den med ro i dag.',on:[1,2,3,4],off:[1,2,3,4,5,6],caption:'Tilstand · træt (41)'}],
+      modules:[['●','health-ingest','07:41','hver time','ok'],['●','readiness-model','07:42','07:40','ok'],['●','pebble-push','07:38','ved ændring','ok'],['●','obsidian-note','07:42','hver time','ok'],['○','backup','9. okt.','nat','pauset']].map(([dot,name,last,plan,status],i)=>({dot,name,last,plan,status,dotc:{color:dot==='●'?'var(--seed)':'var(--tmuted)'},sel:i===0?{background:'color-mix(in oklch, var(--seed) 18%, transparent)'}:{}})),
+      runs:[['07:42','obsidian-note','0,4 s','ok'],['07:42','readiness-model','3,1 s','ok'],['07:41','health-ingest','1,2 s','214 poster'],['07:38','pebble-push','0,8 s','ok'],['06:41','health-ingest','0,9 s','ingen nye data'],['05:41','health-ingest','—','telefon ikke set']].map(([t,job,dur,res])=>({t,job,dur,res,c:{color:res==='ok'||res.includes('poster')?'var(--seed)':'var(--tmuted)'}}))
+    };
+  }
+}
+</script>
+</body>
+</html>
