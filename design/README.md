@@ -7,6 +7,7 @@ Designretning v1, 11. oktober 2026.
 - `pixi-suiten.dc.html` — kildefilen (kræver Claude Design-runtime).
 - `pixi/1x/` — pixi-tilstande i 51×46 px, klar til Pebble.
 - `pixi/8x/` — samme, forstørret 8× til visning.
+- `android/<app>/` — Android-ikoner til pixi-hub, pixi-sense, pixi-sync og uni-theme: adaptivt ikon som vektor-XML (`res/`), monokromt lag til tematiske ikoner, baggrund `#000055`, og PNG-eksempler (`png/`, inkl. 512 px til Play). Kopiér `res/` ind i appens `src/main/res/` og tilføj `android:roundIcon="@mipmap/ic_launcher_round"` i manifestet.
 
 ## Beslutninger
 - **Visuelt sprog:** Industry: hårstreger, firkantede hjørner, registreringsmærker. Mørk tilstand først.
