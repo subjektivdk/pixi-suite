@@ -1,0 +1,16 @@
+# Beskrivelse af pixi-suite til den samlede dokumentation (pixi-docs).
+# Repoet er OFFENTLIGT: ingen hostnavne, adresser eller personlige oplysninger her.
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: pixi-suite
+  title: pixi-suite (design)
+  description: Designsproget for pixi-sync, pixi-sense, pixi-hub og uni-theme. Én figur (pixi), ét sprog, ikoner til alle apps.
+  annotations:
+    github.com/project-slug: subjektivdk/pixi-suite
+    pixi.mtj.dk/help: CLAUDE.md
+spec:
+  type: design
+  lifecycle: production
+  owner: user:martin
+  system: tema
