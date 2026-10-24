@@ -18,7 +18,7 @@ Designretning v1, 11. oktober 2026.
 - **Status:** ingen rød/grøn; status vises med pixi og tekst.
 - **Tone:** kort og saglig. Ingen udråbstegn, streaks eller skyld over manglende data.
 - **Uret:** hvid baggrund (læsbar i sollys), urskærm tegnes én gang i minuttet, pixi animerer kun ~1 s efter tryk.
-- **Notifikationer:** kun når en fejl har varet over 3 timer; sync vises lydløst.
+- **Notifikationer:** fejl først, når de har varet over 3 timer; sync vises lydløst. Nyheder (dagens readiness, en modelrapport, der venter) må give en notifikation, men uret vibrerer kun for fejl; resten bliver til pins på timeline'n. Ingen egne stilletimer: telefonens Forstyr ikke bestemmer (2026-10-24, pixi-hub#32).
 
 ## Åbent
 - Rasteret er aflæst fra et skærmbillede (51×46). Udskift med den præcise 50×44 fra `pixi-sense/art/pixi_x8.png`.
