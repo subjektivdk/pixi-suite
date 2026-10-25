@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="design_doc_mode" content="canvas">
+<link rel="stylesheet" href="_ds/industry-2f952de8-d4c0-4a73-8ed6-4b814f08a2ad/styles.css">
+<script src="_ds/industry-2f952de8-d4c0-4a73-8ed6-4b814f08a2ad/_ds_bundle.js"></script>
+<script src="pixi-icons.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&display=swap">
+<style>body{margin:0;background:var(--color-bg)}a{color:var(--color-accent-700)}a:hover{color:var(--color-accent-800)}</style>
+</helmet>
+
+<section data-screen-label="01 Android-ikoner" style="width:1800px;padding:96px 80px 120px;display:flex;flex-direction:column;gap:56px">
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:end">
+    <div>
+      <h6 class="text-muted" style="margin:0 0 12px">pixi-suiten · Android-ikoner</h6>
+      <h1 style="font-size:72px;margin:0;line-height:0.95">Ét hoved, ét mærke</h1>
+    </div>
+    <p style="margin:0;font-size:17px;line-height:1.5;max-width:700px;text-wrap:pretty">Alle ikoner bruger pixis hoved i 1:1 pixels på Oxford-blå. Appen kendes på mærket nederst til højre: et turkis emblem med et pixelsymbol. Lagene er tegnet på et 108×108-gitter, så én pixel er én dp, og alt vigtigt ligger inden for den sikre zone på 66 dp.</p>
+  </div>
+
+  <div style="display:flex;flex-direction:column;gap:20px">
+    <h4 style="margin:0">Opbygning · pixi-sync</h4>
+    <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:40px">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="blueprint" style="width:216px;height:216px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="{{ anat.bg }}" style="width:216px;height:216px;image-rendering:pixelated;display:block"></div>
+        <span style="font-size:14px">Baggrund</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--color-neutral-700)">#000055 · ensfarvet</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="blueprint" style="width:216px;height:216px;background-image:linear-gradient(45deg,#e7e7ea 25%,transparent 25%,transparent 75%,#e7e7ea 75%),linear-gradient(45deg,#e7e7ea 25%,transparent 25%,transparent 75%,#e7e7ea 75%);background-size:16px 16px;background-position:0 0,8px 8px"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="{{ anat.fg }}" style="width:216px;height:216px;image-rendering:pixelated;display:block;position:absolute;inset:0"><div style="position:absolute;left:36px;top:36px;width:144px;height:144px;border:1px dashed var(--color-accent-700)"></div><div style="position:absolute;left:42px;top:42px;width:132px;height:132px;border-radius:50%;border:1px dashed var(--color-accent-700)"></div></div>
+        <span style="font-size:14px">Forgrund</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--color-neutral-700)">72 dp synligt · 66 dp sikker zone</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="blueprint" style="width:216px;height:216px;background:#2b2b2d"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="{{ anat.mono }}" style="width:216px;height:216px;image-rendering:pixelated;display:block"></div>
+        <span style="font-size:14px">Monokrom</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--color-neutral-700)">lyse flader beholdes · visir og symbol skæres ud</span>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div class="blueprint" style="width:216px;height:216px;display:grid;place-items:center"><i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i><img src="{{ anat.badge }}" style="width:180px;height:180px;image-rendering:pixelated;display:block"></div>
+        <span style="font-size:14px">Mærke</span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--color-neutral-700)">18 dp cirkel · 1 dp kant · symbol 10×10</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="display:flex;flex-direction:column">
+    <div style="display:grid;grid-template-columns:220px repeat(3,160px) 40px repeat(2,160px) 40px 160px;align-items:end;gap:0 24px;padding-bottom:14px;border-bottom:1px solid var(--color-divider)">
+      <h6 class="text-muted" style="margin:0">App</h6><h6 class="text-muted" style="margin:0">Cirkel</h6><h6 class="text-muted" style="margin:0">Squircle</h6><h6 class="text-muted" style="margin:0">Afrundet</h6><span></span><h6 class="text-muted" style="margin:0">Tema · mørk</h6><h6 class="text-muted" style="margin:0">Tema · lys</h6><span></span><h6 class="text-muted" style="margin:0">Play · 512</h6>
+    </div>
+    <sc-for list="{{ apps }}" as="a" hint-placeholder-count="4">
+      <div style="display:grid;grid-template-columns:220px repeat(3,160px) 40px repeat(2,160px) 40px 160px;align-items:center;gap:0 24px;padding:28px 0;border-bottom:1px solid var(--color-divider)">
+        <div style="display:flex;flex-direction:column;gap:6px"><span style="font-family:var(--font-heading);font-weight:600;font-size:26px;line-height:1">{{ a.name }}</span><span style="font-size:14px;color:var(--color-neutral-700)">{{ a.desc }}</span></div>
+        <div style="width:144px;height:144px;border-radius:50%;overflow:hidden;position:relative"><img src="{{ a.full }}" style="position:absolute;left:-36px;top:-36px;width:216px;height:216px;max-width:none;image-rendering:pixelated"></div>
+        <div style="width:144px;height:144px;border-radius:32%;overflow:hidden;position:relative"><img src="{{ a.full }}" style="position:absolute;left:-36px;top:-36px;width:216px;height:216px;max-width:none;image-rendering:pixelated"></div>
+        <div style="width:144px;height:144px;border-radius:18%;overflow:hidden;position:relative"><img src="{{ a.full }}" style="position:absolute;left:-36px;top:-36px;width:216px;height:216px;max-width:none;image-rendering:pixelated"></div>
+        <span></span>
+        <div style="width:144px;height:144px;border-radius:50%;overflow:hidden;position:relative"><img src="{{ a.themedDark }}" style="position:absolute;left:-36px;top:-36px;width:216px;height:216px;max-width:none;image-rendering:pixelated"></div>
+        <div style="width:144px;height:144px;border-radius:50%;overflow:hidden;position:relative"><img src="{{ a.themedLight }}" style="position:absolute;left:-36px;top:-36px;width:216px;height:216px;max-width:none;image-rendering:pixelated"></div>
+        <span></span>
+        <div style="width:144px;height:144px;border-radius:20%;overflow:hidden"><img src="{{ a.play }}" style="width:144px;height:144px;image-rendering:pixelated;display:block"></div>
+      </div>
+    </sc-for>
+  </div>
+
+  <div style="display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:48px;align-items:start">
+    <div style="display:flex;flex-direction:column;gap:20px">
+      <h4 style="margin:0">På hjemmeskærmen · 1:1</h4>
+      <div style="background:color-mix(in oklch, {{ seed }}, black 72%);padding:32px;display:flex;gap:36px">
+        <sc-for list="{{ apps }}" as="a" hint-placeholder-count="4">
+          <div style="display:flex;flex-direction:column;align-items:center;gap:8px;width:72px"><div style="width:56px;height:56px;border-radius:50%;overflow:hidden;position:relative"><img src="{{ a.full }}" style="position:absolute;left:-14px;top:-14px;width:84px;height:84px;max-width:none;image-rendering:pixelated"></div><span style="font-size:12px;color:#f5f5f8">{{ a.name }}</span></div>
+        </sc-for>
+      </div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px">
+      <h4 style="margin:0">Regler</h4>
+      <div style="display:flex;flex-direction:column;border-top:1px solid var(--color-divider);font-size:15px">
+        <div style="padding:12px 0;border-bottom:1px solid var(--color-divider)">pixi skaleres kun i hele tal. Ikonet tegnes 1 px = 1 dp og eksporteres 4× (432 px) til xxxhdpi.</div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--color-divider)">Mærket ligger altid nederst til højre, samme sted og størrelse i alle apps.</div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--color-divider)">Kun pixis egne farver. Mærket er turkis, symbolet Oxford-blå.</div>
+        <div style="padding:12px 0;border-bottom:1px solid var(--color-divider)">Monokrom: Android farver laget selv efter temaet, så det indeholder kun hvid og gennemsigtig.</div>
+      </div>
+    </div>
+  </div>
+</section>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;background&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#000055&quot;,&quot;#005555&quot;,&quot;#000000&quot;,&quot;#FFFFFF&quot;],&quot;default&quot;:&quot;#000055&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Ikon&quot;},&quot;seed&quot;:{&quot;editor&quot;:&quot;color&quot;,&quot;options&quot;:[&quot;#7aa2f7&quot;,&quot;#89b4fa&quot;,&quot;#d79921&quot;,&quot;#a7c080&quot;,&quot;#88c0d0&quot;],&quot;default&quot;:&quot;#7aa2f7&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Tema (monokrom)&quot;}}">
+const APPS=[
+ {id:'sync',name:'pixi-sync',desc:'Health Connect → server',badge:'sync'},
+ {id:'sense',name:'pixi-sense',desc:'Ur-app og urskærm',badge:'watch'},
+ {id:'hub',name:'pixi-hub',desc:'Server og terminal',badge:'term'},
+ {id:'theme',name:'uni-theme',desc:'Tema til telefon og ur',badge:'drop'}
+];
+function url(g,scale,crop){
+ crop=crop||[0,0,g.length];const n=crop[2],cv=document.createElement('canvas');cv.width=n*scale;cv.height=n*scale;const ctx=cv.getContext('2d');
+ for(let y=0;y<n;y++)for(let x=0;x<n;x++){const c=g[crop[1]+y][crop[0]+x];if(!c)continue;ctx.fillStyle=c;ctx.fillRect(x*scale,y*scale,scale,scale)}
+ return cv.toDataURL();
+}
+const tint=(g,fg,bg)=>g.map(r=>r.map(c=>c?fg:bg));
+const hexMix=(a,b,t)=>{const p=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));const A=p(a),B=p(b);return '#'+A.map((v,i)=>Math.round(v+(B[i]-v)*t).toString(16).padStart(2,'0')).join('')};
+class Component extends DCLogic {
+  cache=new Map();
+  componentDidMount(){if(!window.PixiIcons){const t=setInterval(()=>{if(window.PixiIcons){clearInterval(t);this.forceUpdate()}},100)}}
+  memo(k,fn){if(!this.cache.has(k))this.cache.set(k,fn());return this.cache.get(k)}
+  renderVals(){
+    const seed=this.props.seed||'#7aa2f7';
+    const bgc=this.props.background||'#000055';
+    const PI=window.PixiIcons;
+    if(!PI)return {apps:APPS.map(a=>({...a})),anat:{},seed};
+    const bg=PI.compose(null,'bg',bgc);
+    const dk=[hexMix(seed,'#000000',0.75),hexMix(seed,'#ffffff',0.7)],lt=[hexMix(seed,'#ffffff',0.85),hexMix(seed,'#000000',0.6)];
+    const apps=APPS.map(a=>this.memo(a.id+bgc+seed,()=>{
+      const fg=PI.compose(a.badge,'fg'),mono=PI.compose(a.badge,'mono'),full=PI.flatten(fg,bg);
+      return {...a,full:url(full,2),play:url(full,8,[22,22,64]),
+        themedDark:url(PI.flatten(tint(mono,dk[1],null),tint(bg,dk[0])),2),
+        themedLight:url(PI.flatten(tint(mono,lt[1],null),tint(bg,lt[0])),2)};
+    }));
+    const anat=this.memo('anat'+bgc,()=>{
+      const fg=PI.compose('sync','fg'),mono=PI.compose('sync','mono');
+      const b=PI.compose('sync','fg').slice(58,82).map((r,y)=>r.slice(58,82).map((c,x)=>((x+.5-12)**2+(y+.5-12)**2<=(10.6)**2)?c:null));
+      return {bg:url(bg,2),fg:url(fg,2),mono:url(mono,2),badge:url(b,8)};
+    });
+    return {apps,anat,seed};
+  }
+}
+</script>
+</body>
+</html>

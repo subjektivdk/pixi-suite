@@ -7,6 +7,7 @@ Designet til pixi-suiten (pixi-sync, pixi-sense, pixi-hub og uni-theme): én fig
 ## Indhold
 - `design/pixi-suiten.html`: hele boardet som én selvstændig fil (henter React fra unpkg, så det kræver net).
 - `design/pixi-suiten.dc.html`: kilden (kræver Claude Design-runtime).
+- `design/android-ikoner.dc.html` og `design/pixi-icons.js`: boardet med Android-ikonerne og koden, der tegner dem.
 - `design/pixi/1x` og `8x`: pixi-tilstandene som PNG (51×46 og forstørret 8×), gennemsigtig baggrund.
 - `design/android/<app>/`: adaptive Android-ikoner som vektor-XML til alle fire apps, med monokromt lag og baggrund `#000055`, plus PNG-eksempler og Play-billede i 512. Kopiér `res/` ind i appens `src/main/res/` og tilføj `android:roundIcon="@mipmap/ic_launcher_round"`.
 
@@ -14,7 +15,7 @@ Designet til pixi-suiten (pixi-sync, pixi-sense, pixi-hub og uni-theme): én fig
 Industry-stil: hårstreger, firkantede hjørner (4 dp), mørk tilstand først. Accent fra Omarchy-temaet via uni-theme (Material You-seed på telefonen), nærmeste af 64 farver på uret. pixi har fast palet (ti Pebble-farver) og følger ikke temaet. Skrifter: JetBrains Mono til tal og terminal, Barlow og Barlow Condensed til tekst. Ingen rød/grøn; status vises med pixi og tekst. Kort og saglig tone, ingen udråbstegn eller streaks.
 
 ## Hvor det er brugt
-- **pixi-sync**: hovedskærm, pixi-tilstande, tema, skrifter og ikon er lagt ind (11/10 2026).
+- **pixi-sync**: hovedskærm, pixi-tilstande, tema, skrifter og ikon er lagt ind (11/10 2026), opdateret med det rensede raster og de nye ikoner 25/10.
 - **pixi-sense, pixi-hub, uni-theme**: designet er ikke lagt ind endnu. Ikonerne ligger klar. uni-theme har stadig sit gamle ikon (tre ringe).
 
 ## Åbent
